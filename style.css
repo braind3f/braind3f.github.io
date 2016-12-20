@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Hind); /*--- Body Font --*/
+@import url(https://fonts.googleapis.com/css?family=Nobile); /*--- Heading Font --*/
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF;
+    font-family: 'Hind', sans-serif;
+    font-size: 24px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Nobile', sans-serif;
+    text-align: center;
+    font-size: 220%;
+    color: #4A4444;
+    text-transform: uppercase;
+    letter-spacing: 3%;
+    padding: 3% 0;
+}
+
+h3 {
+    font-family: 'Nobile', sans-serif;
+    text-align: center;
+    color: #4A4444;
+    text-transform: uppercase;
+    letter-spacing: 1%;
+}
+
+p {
+    padding: 2%;
+    color: #4A4444;
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#banner-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*--- START IMAGE SLIDER STYLE--*/
+.slider {
+    width: 100%;
+}
+.slider1 img {
+    min-width: auto;
+    margin: 0 auto;
+}
+.slider .bx-wrapper .bx-controls-direction a {
+    outline: 0 none;
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    height: 71px;
+    width: 40px;
+    z-index: -1;
+    transition: all 0.7s;
+}
+.slider .bx-wrapper:hover .bx-controls-direction a {
+    z-index:  5;
+}
+.slider .bx-wrapper .bx-prev {
+    background: #000 url("img/left-arrow-white.png") no-repeat 8px 13px;
+    left: 0px;
+    opacity: 0.3;
+}
+.slider .bx-wrapper .bx-prev:hover {
+    opacity: 0.6;
+}
+.slider .bx-wrapper .bx-next {
+    background: #000 url("img/right-arrow-white.png") no-repeat 10px 12px;
+    right: 0px;
+    opacity: 0.3;
+}
+.slider .bx-wrapper .bx-next:hover {
+    opacity: 0.6;
+}
+/*---END IMAGE SLIDER STYLE--*/
+
+.one-half {
+    margin: 2% 30% 3% 30%;
+    text-align: center;
+}
+.one-half p {
+    text-align: center;
+}
+
+.one-third {
+    width: 28%;
+    float: left;
+    margin: 2% 0 3% 4%;
+    text-align: center;
+    
+
+
+}
+
+
+    
+
+
+
+.one-forth  {
+    margin: 2% 30% 3% 30%;
+    text-align: center;
+    
+    
+}
+
+.left-col {
+    width: 0%;
+    float: left;
+    margin: 4% 0 4% 4%;
+    display: none;
+}
+
+.sidebar {
+    width: 26%;
+    
+    margin: 0 auto;
+    
+}
+
+.sidebar p, h1 {
+    text-align: center;
+    
+}
+
+.sidebar img {
+    opacity: 0.9;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+/*---START PARALLAX SECTION--*/
+.parallax-1 {
+    background: url("img/moon-pattern.jpg") repeat fixed 100%;        /* https://www.w3newbie.com/wp-content/uploads/parallax-2.jpg */
+    height: 200px;
+    text-align: center;
+    
+   
+
+}
+.parallax-inner {
+    padding-top: 90px;
+    padding-bottom: 300px;
+    
+    
+}
+
+.parallax-2 {
+    background: url(img/skulls.jpg) repeat fixed 100%;
+    margin-bottom: -5%;
+    height: 120px;
+    
+    text-align: center;
+}
+.parallax-inner h3, .parallax-inner p {
+    color: #F1F1F1;
+}
+/*---END PARALLAX SECTION--*/
+
+footer {
+    background: #262E37;
+    opacity: 0.9;
+    width: 100%;
+
+    margin-top: 20%;
+    margin-bottom: 0%;
+    padding: 1% 0;
+    overflow: auto;
+    
+}
+
+footer p {
+    color: #FFF;
+    text-align: center;
+
+}
+
+/*---MEDIA QUERIES START--*/
+@media screen and (max-width: 768px) {
+    .slider .bx-wrapper .bx-controls {
+        display: none;
+    }
+    .parallax-inner {
+        
+    }
+    .one-third {
+        width: 100%;
+        margin: 4% 0;
+    }
+    .one-half {
+        
+    }
+    h1 {
+        font-size: 150%;
+
+    }
+    .left-col {
+        width: 100%;
+        height: 30%;
+        margin: 0 0 3% 0;
+        
+    }
+    .sidebar {
+        width: 100%;
+        margin: 0;
+        
+    }
+    img {
+        width: 80%;
+    }
+    h3 {
+        padding-top: 3%;
+    }
+
+    footer {
+        margin-top: 100%;
+        margin-bottom: 0%;
+    }
+    .parallax-2 {
+        margin-bottom: -5%;
+    }
+    
+}
